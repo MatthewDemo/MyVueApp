@@ -66,7 +66,7 @@ export const postModule = {
           },
           async loadMorePosts({state, commit}) {
             try{
-                commit('setPage', state.page + 1)
+                commit('setPage', state.page++)
                 const response = await axios.get('https://jsonplaceholder.typicode.com/posts', {
                     params: {
                         _page: state.page,
