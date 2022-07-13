@@ -90,9 +90,10 @@ export default {
         this.posts = this.posts.filter(p => p.id !== post.id)
       },
       showDialog(){
-        this.dialogVisible = true;
+        this.dialogVisible = true ;
       },     
     },
+    //testtesttesttest
     mounted() {
       this.fetchPosts();
          },
